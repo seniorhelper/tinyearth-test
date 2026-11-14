@@ -1,0 +1,4 @@
+Copyright (c) 2026 Zach Wennstedt. All rights reserved.
+
+The game code, art, sound and design in this build are original work. No licence to copy, modify or redistribute is granted.
+Third-party open-source libraries are listed in THIRD-PARTY.md and remain under their own licences.
