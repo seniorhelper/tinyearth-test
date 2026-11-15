@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tiny Earth – v4.63 (IWSDK)</title>
+<title>Tiny Earth – v4.64 (IWSDK)</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 <style>
@@ -12,6 +12,7 @@
   #ui{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:1.5vh;z-index:5;pointer-events:none;padding:3vh 4vw;box-sizing:border-box}
   #card{background:linear-gradient(180deg,rgba(14,36,84,.93),rgba(4,12,30,.95));border:3px solid #7df9ff;box-shadow:0 0 0 6px rgba(125,249,255,.14),0 18px 50px rgba(0,0,0,.55),inset 0 2px 0 rgba(255,255,255,.22);border-radius:26px;padding:2vh 3.4vw 1.8vh;text-align:center;color:#fff;max-width:760px;display:flex;flex-direction:column;align-items:center;gap:1.1vh;margin-bottom:1vh}
   #card h1{margin:0;font-size:clamp(38px,6vw,78px);line-height:1;letter-spacing:.02em;font-weight:900;color:#ffe23a;text-shadow:0 1px 0 #f2b800,0 2px 0 #e0a200,0 3px 0 #c88a00,0 4px 0 #a86f00,0 5px 0 #8a5900,0 12px 22px rgba(0,0,0,.6)}
+  #motto{margin:-.2vh 0 .4vh!important;font-size:clamp(22px,3.2vw,40px)!important;font-weight:800;font-style:italic;letter-spacing:.04em;background:linear-gradient(90deg,#7df9ff,#ffffff 45%,#ffe23a);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 2px 6px rgba(0,0,0,.55))}
   #tag{font-weight:800;color:#fff;font-size:clamp(19px,2.6vw,32px)!important;display:flex;flex-wrap:wrap;justify-content:center;gap:.35em .5em}
   #tag span{padding:.12em .6em;border-radius:999px;border:2px solid currentColor;background:rgba(255,255,255,.08)}
   #tag .a{color:#7df9ff} #tag .b{color:#ffe23a} #tag .c{color:#9dff8a} #tag .d{color:#ff9ecb}
@@ -28,18 +29,19 @@
   #enter[disabled]{animation:none}
   body:not(.playing) #hint{display:none}
   body.playing #ui{justify-content:flex-end;padding-bottom:64px} body.playing #enter{font-size:16px;min-width:0;padding:8px 16px;border-width:3px;border-radius:6px;opacity:.75;box-shadow:none;animation:none;margin:0}
-  body.playing #card h1, body.playing #card p{display:none} body.playing #card{background:none;border:none;padding:0;box-shadow:none} body.playing #mission,body.playing #privacy{display:none}
+  body.playing #card h1, body.playing #card p{display:none} body.playing #motto{display:none} body.playing #card{background:none;border:none;padding:0;box-shadow:none} body.playing #mission,body.playing #privacy{display:none}
   #enter[disabled]{opacity:.5;cursor:default}
   #hint{background:#ffffffee;color:#123;padding:8px 14px;border-radius:6px;font-size:14px;max-width:560px;text-align:center;position:fixed;bottom:10px}
 </style>
-  <script type="module" crossorigin src="./assets/index-CE3DI-Gr.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/light-system-Dr2_WDgH.js">
+  <script type="module" crossorigin src="./assets/index-CV4lvo06.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/light-system-tJnn3V0i.js">
 </head>
 <body>
 <div id="app"></div>
 <div id="ui">
   <div id="card">
   <h1>Tiny Earth</h1>
+  <p id="motto">The world in your hands</p>
   <p id="tag"><span class="a">Explore</span><span class="b">Play</span><span class="c">Learn</span><span class="d">Have fun!</span></p>
   <p>A living world on your table. Play with your own hands.</p>
   <button id="enter" disabled>Checking headset…</button>
